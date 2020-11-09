@@ -1,0 +1,407 @@
+﻿<html>
+<head>
+
+<script>
+function validate(){
+/*n1=document.getElementById("name").value; 
+dob1=document.getElementById("dob").value;
+blood1=document.getElementById("bg").value;
+fn1=document.getElementById("fname").value; 
+ad1=document.getElementById("address").value; 
+z1=document.getElementById("zip").value; 
+c1=document.getElementById("country").value; */
+ge1=document.getElementsByName("g1"); 
+
+/*ph1=document.getElementById("phone").value;
+e1=document.getElementById("email").value; 
+w1=document.getElementById("website").value; 
+
+ug1=document.getElementById("ug").value; 
+y1=document.getElementById("year1").value;
+ugscore1=document.getElementById("ugscore").value; 
+hsc1=document.getElementById("hsc").value; 
+y2=document.getElementById("year2").value;
+hscore1=document.getElementById("hscscore").value;
+hs1=document.getElementById("hs").value; 
+y3=document.getElementById("year3").value;
+hs_s=document.getElementById("hsscore").value;
+
+sk1=document.getElementById("skill1").value;
+v1=document.getElementById("val1").value;
+sk2=document.getElementById("skill2").value;
+v2=document.getElementById("val2").value;
+sk3=document.getElementById("skill3").value;
+v3=document.getElementById("val3").value;
+sk4=document.getElementById("skill4").value;
+v4=document.getElementById("val4").value;
+sk5=document.getElementById("skill5").value;
+v5=document.getElementById("val5").value;
+
+ac1=document.getElementById("a1").value;
+ac2=document.getElementById("a2").value;
+ac3=document.getElementById("a3").value;
+
+des1=document.getElementById("des").value;*/
+ //document.write("<fieldset><b>Name:</b>"+n1+"<br><b>Father's Name:</b>"+fn1+"<br><b>Blood group:</b>"+blood1+"<br><b>Date of Birth:</b>"+dob1+"<br><b>Address:</b>"+ad1+"<br><b>PIN code:</b>"+z1+"<br><b>Country:</b>"+c1+"<br><b>Gender:</b>"+g1+"<br></fieldset>");
+for(i=0;i<ge1.length;i++){
+if(ge1[i].checked)
+document.write("gender:"+ge1[i].value);
+}
+}
+</script>
+<style>
+
+  #part{
+    border: 1px solid black;
+  }
+.fontred{color:red;}
+.subHeading
+{
+font-size:23px; 
+weight:bold;
+}
+h1
+{
+	color:#08fc49;
+}
+td,tr{
+	color:#08fc49;
+}
+</style>
+</head>
+
+
+<body style="background-color: #000000">
+
+<h1 align="center">Enter your details</h1>
+<tr></tr>
+<form><fieldset>
+  <fieldset>
+<table border=0 cellspacing=5>
+
+<tr style="color:#08fc49"><font class=subHeading><b>Personal Details</b></font></tr>
+<tr>
+<td>Name:<font class=fontred>*</font></td>
+<td><input type=text id=name></td>
+<td></td>
+</tr>
+
+<td>Date of birth:<font class=fontred>*</font></td>
+<td><input type=date id=dob></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Blood Group:</td>
+<td>
+<select id=bg>
+<option>-.-</option>
+<option>O+</option>
+<option>O-</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Father's Name:<font class=fontred>*</font></td>
+<td><input type=text id=fname></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Address:</td>
+<td><textarea id=address></textarea></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Zip code:<font class=fontred>*</font></td>
+<td><input type=text id=zip pattern="[0-9]{6}"></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Country:<font class=fontred>*</font></td>
+<td>
+<select id=country>
+<option>Please select...</option>
+<option>India</option>
+<option>Pakistan</option>
+<option>China</option>
+<option>Japan</option>
+<option>Srilanka</option>
+</select>
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Gender:<font class=fontred>*</font></td>
+<td>
+<input type=radio name=g1 value=male>Male
+<input type=radio name=g1 value=female>Female
+</td>
+</tr>
+
+
+<tr>
+<td>Phone:<font class=fontred>*</font></td>
+<td><input type=text id=phone pattern="[0-9]{10}"></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Email:<font class=fontred>*</font></td>
+<td><input type=text id=email></td>
+<td></td>
+</tr>
+
+<tr>
+<td>website:<font class=fontred>*</font></td>
+<td><input type=text id=website ></td>
+
+<td></td>
+</tr>
+
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<br>
+
+<fieldset>
+<table>
+<tr><td><font class=subHeading><b>Education</b></font></td></tr>
+<tr></tr>
+
+<tr>
+<td>Under Graduation:</td>
+<td><textarea cols=35 id=ug></textarea></td>
+<td></td>
+<td>Year:</td>
+<td><select id=year1>
+<option>2020</option>
+<option>2019</option>
+<option>2018</option>
+<option>2017</option>
+<option>2016</option>
+<option>2015</option>
+<option>2014</option>
+<option>2013</option>
+<option>2012</option>
+<option>2011</option>
+<option>2010</option>
+</select>
+</td>
+<td>Score:</td>
+<td><input type=text size=8 id=ugscscore></td>
+</tr>
+
+<tr>
+<td>Higher Secondary:</td>
+<td><textarea cols=35 id=hsc></textarea></td>
+<td></td>
+<td>Year:</td>
+<td><select id=year2>
+<option>2020</option>
+<option>2019</option>
+<option>2018</option>
+<option>2017</option>
+<option>2016</option>
+<option>2015</option>
+<option>2014</option>
+<option>2013</option>
+<option>2012</option>
+<option>2011</option>
+<option>2010</option>
+</select>
+</td>
+<td>Score:</td>
+<td><input type=text size=8 id=hscscore></td>
+</tr>
+
+<tr>
+<td>High school:</td>
+<td><textarea cols=35 id=hs></textarea></td>
+<td></td>
+<td>Year:</td>
+<td><select id=year3>
+<option>2020</option>
+<option>2019</option>
+<option>2018</option>
+<option>2017</option>
+<option>2016</option>
+<option>2015</option>
+<option>2014</option>
+<option>2013</option>
+<option>2012</option>
+<option>2011</option>
+<option>2010</option>
+</select>
+</td>
+<td>Score:</td>
+<td><input type=text size=8 id=hsscore></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<br>
+<fieldset>
+<table>
+<tr><td colspan=3><font class=subheading><b>Professional Skills</b></font></td></tr>
+<tr></tr>
+<tr>
+<td></td>
+<td><b>Skill</b></td>
+<td><b>Level</b></td>
+</tr>
+
+<tr>
+<td>1.</td>
+<td><input type=text id=skill1></td> 
+<td><select id=val1>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</tr>
+
+<tr>
+<td>2.</td>
+<td><input type=text id=skill2></td> 
+<td><select id=val2>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</tr>
+
+<tr>
+<td>3.</td>
+<td><input type=text id=skill3></td> 
+<td><select id=val3>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</tr>
+
+<tr>
+<td>4.</td>
+<td><input type=text id=skill4></td> 
+<td><select id=val4>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</tr>
+
+<tr>
+<td>5.</td>
+<td><input type=text id=skill5></td> 
+<td><select id=val5>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<br>
+
+<fieldset>
+<table>
+<tr>
+<td colspan=3><font class=subheading><b>Personal skills</b></font></td>
+</tr>
+<tr></tr>
+<tr></tr>
+
+<tr>
+<td colspan=2><input type=checkbox value="public speaking" id=s1>Public speaking</td>
+<td colspan=2><input type=checkbox value=dance id=s5>Dance</td>
+</tr>
+<tr>
+<td colspan=2><input type=checkbox id=s2 value=designing>Designing</td>
+<td colspan=2><input type=checkbox id=s6 value=sports>Sports</td>
+</tr>
+<tr>
+<td colspan=2><input type=checkbox id=s3 value=swimming>Swimming</td>
+<td colspan=2><input type=checkbox id=s7 value=writing>Writing</td>
+</tr>
+<tr>
+<td colspan=2><input type=checkbox id=s4 value="fine arts">Fine arts</td>
+<td colspan=2><input type=checkbox id=s8 value="social activities">Social activities</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<br>
+
+<fieldset>
+<table>
+<tr>
+<td colspan=3><font class=subheading><b>Achievements</b></font></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td>1. <input type=text size=30 id=a1></td>
+</tr>
+<tr>
+<td>2. <input type=text size=30 id=a2></td>
+</tr>
+<tr>
+<td>3. <input type=text size=30 id=a3></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<br>
+
+<fieldset>
+<table>
+<tr>
+<td colspan=3><font class=subheading><b>About Yourself: Description</b></font></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+
+<tr>
+<td colspan=6>
+<textarea rows=5 cols=50 id=des> Describe yourself....</textarea></td>
+</tr>
+<tr></tr>
+
+<tr>
+<td></td>
+<td>
+
+
+</td>
+<td></td>
+</tr>
+
+</table>
+</fieldset><br>
+</fieldset><br>
+<input type=button value=SUBMIT onclick=validate()>&nbsp
+<button>CLEAR</button>
+</form>
+
+
+</body>
+</html>
